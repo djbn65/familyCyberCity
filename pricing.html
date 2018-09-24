@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing - FCC</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <script src="js/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/table-styles.css">
+  <link rel="stylesheet" type="text/css" href="css/set2.css" />
+  <link rel="stylesheet" href="css/component.css">
+
+  <!-- SLIDEOUT NAV LINKS-->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <script src="js/jquery.mmenu.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.mmenu.css">
+  <link href="css/jquery.mmenu.pagedim.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.mmenu.iconpanels.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/jquery.mmenu.iconpanels.css">
+  <script src="js/jquery.mmenu.fixedelements.min.js"></script>
+  <!-- END SLIDEOUT NAV LINKS-->
+
+  <!-- SLIDESHOW LINKS -->
+  <script src="js/jquery.cycle2.js"></script>
+  <script src="js/jquery.cycle2.swipe.js"></script>
+  <!-- END SLIDESHOW LINKS -->
+
+  <!--SCROLLING LINKS-->
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <link rel="stylesheet" href="css/scrolling-nav.css">
+  <script src="js/main.js"></script>
+  <!--END SCROLLING LINKS-->
+
+  <!-- FONT LINKS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i'>
+
+  <!-- END FONT LINKS -->
+
+  <!-- MENU BUTTON LINKS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="css/hamburgers.css">
+  <!--END MENU BUTTON LINKS-->
+  <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 20,
+                header = document.querySelector("header"),
+                logo = document.querySelector(".logo");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"active");
+                classie.add(logo,"smaller")
+            } else {
+                if (classie.has(header,"active")) {
+                    classie.remove(header,"active");
+                    classie.remove(logo,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+  </script>
+</head>
+
+<body>
+  <div id="my-wrapper" class="touch">
+    <div class="md-modal md-effect-1" id="package1">
+			<div class="md-content">
+        <h1>The Beginner's Package</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Package Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$269</td>
+            </tr>
+            <tr>
+              <td>Days Available</td>
+              <td>Any Day</td>
+            </tr>
+            <tr>
+              <td>Max Guests</td>
+              <td>20</td>
+            </tr>
+            <tr>
+              <td>Food Discount</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Party Length</td>
+              <td>Half Day Maximum</td>
+            </tr>
+            <tr>
+              <td>Private Party Room</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Activities</td>
+              <td>Unlimited Access Except Pool (1 Hour Max)</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="package2">
+			<div class="md-content">
+        <h1>The "Not-So-Virtual" Reality Package</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Package Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$199</td>
+            </tr>
+            <tr>
+              <td>Days Available</td>
+              <td>Tuesdays and Thursdays</td>
+            </tr>
+            <tr>
+              <td>Max Guests</td>
+              <td>25</td>
+            </tr>
+            <tr>
+              <td>Food Discount</td>
+              <td>20%</td>
+            </tr>
+            <tr>
+              <td>Party Length</td>
+              <td>Half-Day Maximum</td>
+            </tr>
+            <tr>
+              <td>Private Party Room</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Activities</td>
+              <td>Unlimited Outdoor Activities</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="package3">
+			<div class="md-content">
+        <h1>The Dream Experience Package</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Package Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$349</td>
+            </tr>
+            <tr>
+              <td>Days Available</td>
+              <td>Any Day</td>
+            </tr>
+            <tr>
+              <td>Max Guests</td>
+              <td>20 + $10 per Addl. Guest</td>
+            </tr>
+            <tr>
+              <td>Food Discount</td>
+              <td>One Free Meal for Each Guest</td>
+            </tr>
+            <tr>
+              <td>Party Length</td>
+              <td>Reserved Time</td>
+            </tr>
+            <tr>
+              <td>Private Party Room</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Activities</td>
+              <td>Unlimited Access to All</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="package4">
+			<div class="md-content">
+        <h1>A Techie's Virtual Utopia Package</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Feature</th>
+              <th>Package Value</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Price</td>
+              <td>$499</td>
+            </tr>
+            <tr>
+              <td>Days Available</td>
+              <td>Mondays, Wednesdays, Fridays</td>
+            </tr>
+            <tr>
+              <td>Max Guests</td>
+              <td>35</td>
+            </tr>
+            <tr>
+              <td>Food Discount</td>
+              <td>One Free Meal for Each Guest</td>
+            </tr>
+            <tr>
+              <td>Party Length</td>
+              <td>Reserved Time</td>
+            </tr>
+            <tr>
+              <td>Private Party Room</td>
+              <td>Yes</td>
+            </tr>
+            <tr>
+              <td>Activities</td>
+              <td>Unlimited Access to All</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    
+    <nav id="cd-vertical-nav">
+  		<ul>
+        <li>
+  				<a href="#page-top" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Page Top</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#indoor" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Indoor</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#outdoor" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Outdoor</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#packages" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Activities</span>
+  				</a>
+  			</li>
+        <li>
+  				<a href="#deals" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Deals</span>
+  				</a>
+  			</li>
+        <li>
+  				<a href="#contact" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Contact</span>
+  				</a>
+  			</li>
+  		</ul>
+  	</nav>
+
+    <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+    
+    <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+
+      <header id="header" class="header">
+        <a href="#page-top" class="page-scroll"><h1>F@mily Cyb3r C1ty</h1></a>
+        <button id="hamburger" class="hamburger hamburger--emphatic" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav>
+          <ul>
+            <li><a class="page-scroll" href="#contact">Contact</a></li>
+            <li><a class="page-scroll" href="#deals">Deals</a></li>
+            <li><a class="page-scroll" href="#packages">Packages</a></li>
+            <li><a class="page-scroll" href="#outdoor">Outdoor</a></li>
+            <li><a class="page-scroll" href="#indoor">Indoor</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--SLIDESHOW-->
+      <div class="banner" id="page-top">
+        <div><img src="images/quarters.jpg"></div>
+        <div class="banner-overlay">
+          <h1>Pricing</h1>
+        </div>
+        <a href="#indoor" class="page-scroll down-arrow flaticon-arrows"></a>
+      </div>
+      <!--END SLIDESHOW-->
+
+    <main>
+      <section class="white-bg" style="padding-bottom:2em" id="indoor">
+        <h1 class="heading">Indoor Pricing</h1>
+        <hr class="green">
+        <p class="width-90">View the prices for each individual indoor activity, and click on the activity name to view more pricing details on its respective page.</p>
+        <div class="hours-container">
+          <table id="hor-minimalist-a">
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>1 Hour</th>
+                <th>2 Hours</th>
+                <th>All Day</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><a href="activities/sports.html">Virtual Sports</a></td>
+                <td>$3.50</td>
+                <td>$6.50</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td><a href="activities/laser.html">Laser Tag</a></td>
+                <td>$4.00</td>
+                <td>$7.50</td>
+                <td>$15.00</td>
+              </tr>
+              <tr>
+                <td><a href="activities/arcade.html">Advanced Arcade</a></td>
+                <td>$4.00</td>
+                <td>$7.00</td>
+                <td>$14.00</td>
+              </tr>
+              <tr>
+                <td><a href="activities/theater.html">Theater &amp; Games</a></td>
+                <td>$6.50</td>
+                <td>$12.50</td>
+                <td>$19.00</td>
+              </tr>
+              <tr>
+                <td><a href="activities/robotics.html">Robotics Room</a></td>
+                <td>$6.00</td>
+                <td>$11.00</td>
+                <td>$17.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="dark-bg" style="padding-bottom:2em" id="outdoor">
+        <h1 class="heading">Outdoor Pricing</h1>
+        <hr class="green">
+        <p class="width-90">View the prices for each individual outdoor activity, and click on the activity name to view more pricing details on its respective page.</p>
+        <div class="hours-container light-bg">
+          <table id="hor-minimalist-a">
+            <thead>
+              <tr>
+                <th>Activity</th>
+                <th>1 Hour</th>
+                <th>2 Hours</th>
+                <th>All Day</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td><a href="activities/pool.html">Holographic Pool</a></td>
+                <td>$5.00</td>
+                <td>$9.00</td>
+                <td>$16.00</td>
+              </tr>
+              <tr>
+                <td><a href="activities/drone.html">Drone Racing</a></td>
+                <td>$3.50</td>
+                <td>$6.50</td>
+                <td>$20.00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="blue-bg" style="padding-bottom:2em" id="packages">
+        <h1 class="heading">Party Packages</h1>
+        <hr>
+        <p class="width-90">Planning a party to be held here? We have multiple different options you can choose from to make your party the best without breaking the bank. Click on each package to view more details about it.</p>
+        <div class="feature-container feature-background-1">
+          <div class="feature-row2">
+            <a class="md-trigger" data-modal="package1" href="#package1">
+              <div class="feature-box2">
+                <i class="icon3 flaticon-star larger"></i>
+                <h2>The Beginner's Package</h2>
+                <p>Access to the private party room with access to all activities during the party's length. This package limits the amount of guests, and discounted food is included, as well.</p>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="package2" href="#package2">
+              <div class="feature-box2">
+                <i class="icon3 flaticon-worldwide larger"></i>
+                <h2>The "Not-So-Virtual" Reality Package</h2>
+                <p>Access to the private party room with unlimited, private acccess to all outdoor activities. This package limits the amount of guests, and discounted food is also included.</p>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="package3" href="#package3">
+              <div class="feature-box2">
+                <i class="icon2 flaticon-heart larger"></i>
+                <h2>The Dream Experience Package</h2>
+                <p>Access to the private party room with unlimited access to all activities during the party's length. There is no guest limit, but additional guests will raise the price. One meal is included for each guest, as well.</p>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="package4" href="#package4">
+              <div class="feature-box2">
+                <i class="icon3 flaticon-diamond larger"></i>
+                <h2>A Techie's Virtual Utopia Package</h2>
+                <p>Private access to the whole building for as long as you reserved with an included meal for each guest. This is the ultimate party package for the ultimate tech junkie.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="green-bg" style="padding-bottom:2em" id="deals">
+        <h1 class="heading">Deals</h1>
+        <hr class="blue">
+        <p class="width-90">We offer many deals to our loyal customers through our email service throughout the year, and anyone can sign up for this service as long as you have an email. Name is not required, but you must include your email so we can send you rewards.</p>
+        <div class="transparent-box-3 width-97">
+          <form name="request" action="php/deals.php" autocomplete="off" method="POST">
+            <span class="input input--yoshiko">
+    					<input class="input__field input__field--yoshiko" type="text" id="input-10" name="fname"/>
+    					<label class="input__label input__label--yoshiko" for="input-10">
+    						<span class="input__label-content input__label-content--yoshiko" data-content="First Name">First Name</span>
+    					</label>
+    				</span>
+            <span class="input input--yoshiko">
+    					<input class="input__field input__field--yoshiko" type="text" id="input-10" name="lname"/>
+    					<label class="input__label input__label--yoshiko" for="input-10">
+    						<span class="input__label-content input__label-content--yoshiko" data-content="Last Name">Last Name</span>
+    					</label>
+    				</span>
+            <span class="input input--yoshiko">
+    					<input class="input__field input__field--yoshiko" type="email" id="input-10" name="email" required/>
+    					<label class="input__label input__label--yoshiko" for="input-10">
+    						<span class="input__label-content input__label-content--yoshiko" data-content="Email">Email</span>
+    					</label>
+    				</span>
+            <div class="box">
+            <input type="submit" value="Submit" class="button">
+          </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="navy-blue-bg top-fix" id="contact">
+      <h1 class="heading">F@mily Cyb3r C1ty</h1>
+      <hr>
+      <section class="footer-section activities">
+        <h3>Activities</h3>
+        <ul class="activities-list">
+          <li><a href="activities/sports.html">Virtual Sports</a></li>
+          <li><a href="activities/laser.html">Laser Tag</a></li>
+          <li><a href="activities/arcade.html">Advanced Arcade</a></li>
+          <li><a href="activities/theater.html">Theater &amp; Games</a></li>
+          <li><a href="activities/robotics.html">Robotics Room</a></li>
+          <li><a href="activities/pool.html">Holographic Pool</a></li>
+          <li><a href="activities/drone.html">Drone Racing</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section contact">
+        <h3>Contact</h3>
+          <div class="contact-list">
+            <a class="icon-font icon-mail"></a>
+            <a class="contact-left less-space" href="mailto:familycybercity@gmail.com">familycybercity@gmail.com</a>
+            <a class="contact-left more-space" href="mailto:help.fcc@gmail.com">help.fcc@gmail.com</a>
+            <a class="icon-font icon-phone"></a>
+            <a class="contact-left less-space" href="tel:1-800-366-3669">1-800-366-3669</a>
+            <a class="contact-left more-space" href="tel:1-800-366-3670">1-800-366-3670</a>
+            <a class="icon3 flaticon-map-location"></a>
+            <a class="contact-left less-space">Family Cyber City</a>
+            <a class="contact-left less-space">1262-1500 Goethals Rd N</a>
+            <a class="contact-left">Staten Island, NY 10303</a>
+          </div>
+      </section>
+
+      <section class="footer-section hours">
+        <h3>Hours</h3>
+        <ul class="hours-list">
+          <div class="computer">
+            <li>Monday: 10am - 8pm</li>
+            <li>Tuesday: 10am - 8pm</li>
+            <li>Wednesday: 10am - 8pm</li>
+            <li>Thursday: 10am - 8pm</li>
+            <li>Friday: 10am - 12am</li>
+            <li>Saturday: 10am - 12am</li>
+            <li>Sunday: 10am - 10pm</li>
+          </div>
+          <div class="mobile2">
+            <li>Mon: 10A - 8P</li>
+            <li>Tue: 10A - 8P</li>
+            <li>Wed: 10A - 8P</li>
+            <li>Thur: 10A - 8P</li>
+            <li>Fri: 10A - 12A</li>
+            <li>Sat: 10A - 12A</li>
+            <li>Sun: 10A - 10P</li>
+          </div>
+        </ul>
+      </section>
+
+      <section class="social-section">
+        <h3>Connect with Us</h3>
+        <div class="social-icons">
+          <a id="facebook" href="https://www.facebook.com/familycybercity/" class="social flaticon-facebook-logo-button"></a>
+          <a id="plus" href="https://plus.google.com/105029289738376648082?hl=en" class="social flaticon-google-plus-logo-button"></a>
+          <a id="inst" href="https://www.instagram.com/familycybercity/" class="social flaticon-instagram-logo"></a>
+          <a id="link" href="https://www.linkedin.com/in/dylan-burr-248843133?trk=prof-samename-name" class="social flaticon-linkedin-logo-button"></a>
+          <a id="twitter" href="https://twitter.com/familycybercity" class="social flaticon-twitter-logo-button"></a>
+        </div>
+      </section>
+    </footer>
+  </div> <!--/End my-page div -->
+
+  <nav id="my-menu">
+    <ul>
+      <li><a href="index.html"><i class="icon3 flaticon-home-1"></i>Home</a></li>
+      <li><span><i class="icon3 flaticon-list"></i>Activities</span>
+        <ul>
+          <li><span><i class="icon2 flaticon-gamepad"></i>Indoor</span>
+            <ul>
+              <li><a href="activities/sports.html"><i class="icon4 flaticon-sports"></i>Virtual Sports</a></li>
+              <li><a href="activities/laser.html"><i class="icon4 flaticon-technology"></i>Laser Tag</a></li>
+              <li><a href="activities/arcade.html"><i class="icon4 flaticon-technology-1"></i>Advanced Arcade</a></li>
+              <li><a href="activities/theater.html"><i class="icon4 flaticon-video"></i>Theater &amp; Games</a></li>
+              <li><a href="activities/robotics.html"><i class="icon4 flaticon-technology-2"></i>Robotics Room</a></li>
+            </ul>
+          </li>
+          <li><span><i class="icon3 flaticon-picture"></i>Outdoor</span>
+            <ul>
+              <li><a href="activities/pool.html"><i class="icon4 flaticon-sports-1"></i>Holographic Pool</a></li>
+              <li><a href="activities/drone.html"><i class="icon4 flaticon-camera"></i>Drone Racing</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="food.html"><i class="icon2 flaticon-cutlery"></i>Food</a></li>
+      <li><a href="pricing.html"><i class="icon-font icon-banknote"></i>Pricing</a></li>
+      <li><a href="about.html"><i class="icon2 flaticon-information"></i>About Us</a></li>
+      <li><a href="contact.html"><i class="icon2 flaticon-phone-call"></i>Contact Us</a></li>
+	    <li><a href="/booked"><i class="icon-font icon-calendar"></i>Reservations</a></li>
+      <li><a href="credits.html"><i class="icon3 flaticon-users-1"></i>Credits</a></li>
+    </ul>
+  </nav>
+  </nav>
+
+  <div class="md-overlay"></div>
+  <script>
+   $(document).ready(function() {
+      $("#my-menu").mmenu();
+   });
+
+   var $menu = $("#my-menu").mmenu({
+     "extensions": ["pagedim-black"],
+   });
+   var $icon = $("#hamburger");
+   var API = $menu.data( "mmenu" );
+
+   $icon.on( "click", function( event ) {
+     event.preventDefault();
+     API.open();
+   });
+
+   API.bind( "opened", function() {
+     setTimeout(function() {
+       $icon.addClass( "is-active" );
+     }, 100);
+   });
+   API.bind( "closed", function() {
+     setTimeout(function() {
+       $icon.removeClass( "is-active" );
+     }, 100);
+   });
+   $('.nav-link').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link2').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link3').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link4').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link5').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+  </script>
+
+  <script src="js/classie.js"></script>
+  <script src="js/demo2.js"></script>
+  <script src="js/modalEffects.js"></script>
+
+  <script>
+    (function() {
+      // trim polyfill : https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/Trim
+      if (!String.prototype.trim) {
+        (function() {
+          // Make sure we trim BOM and NBSP
+          var rtrim = /^[\s\uFEFF\xA0]+|[\s\uFEFF\xA0]+$/g;
+          String.prototype.trim = function() {
+            return this.replace(rtrim, '');
+          };
+        })();
+      }
+
+      [].slice.call( document.querySelectorAll( 'input.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+          classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+      } );
+
+      [].slice.call( document.querySelectorAll( 'textarea.input__field' ) ).forEach( function( inputEl ) {
+        // in case the input is already filled..
+        if( inputEl.value.trim() !== '' ) {
+          classie.add( inputEl.parentNode, 'input--filled' );
+        }
+
+        // events:
+        inputEl.addEventListener( 'focus', onInputFocus );
+        inputEl.addEventListener( 'blur', onInputBlur );
+      } );
+
+      function onInputFocus( ev ) {
+        classie.add( ev.target.parentNode, 'input--filled' );
+      }
+
+      function onInputBlur( ev ) {
+        if( ev.target.value.trim() === '' ) {
+          classie.remove( ev.target.parentNode, 'input--filled' );
+        }
+      }
+    })();
+  </script>
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+  </script>
+  <script src="js/cssParser.js"></script>
+  <script src="js/css-filters-polyfill.js"></script>
+</body>
+</html>

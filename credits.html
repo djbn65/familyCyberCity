@@ -1,0 +1,842 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Credits - FCC</title>
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  <script src="js/jquery-3.1.1.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/table-styles.css">
+  <link rel="stylesheet" href="css/component.css">
+
+  <!-- SLIDEOUT NAV LINKS-->
+  <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" type="text/css" href="css/icons.css" />
+  <script src="js/jquery.mmenu.min.js"></script>
+  <link rel="stylesheet" href="css/jquery.mmenu.css">
+  <link href="css/jquery.mmenu.pagedim.css" type="text/css" rel="stylesheet" />
+  <script src="js/jquery.mmenu.iconpanels.min.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="css/jquery.mmenu.iconpanels.css">
+  <script src="js/jquery.mmenu.fixedelements.min.js"></script>
+  <!-- END SLIDEOUT NAV LINKS-->
+
+  <!-- SLIDESHOW LINKS -->
+  <script src="js/jquery.cycle2.js"></script>
+  <script src="js/jquery.cycle2.swipe.js"></script>
+  <!-- END SLIDESHOW LINKS -->
+
+  <!--SCROLLING LINKS-->
+  <script src="js/scrolling-nav.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <link rel="stylesheet" href="css/scrolling-nav.css">
+  <script src="js/main.js"></script>
+  <!--END SCROLLING LINKS-->
+
+  <!-- FONT LINKS -->
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:300,400,700">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Product+Sans:400,400i,700,700i'>
+
+  <!-- END FONT LINKS -->
+
+  <!-- MENU BUTTON LINKS -->
+  <script src="js/modernizr-2.6.2.min.js"></script>
+  <link rel="stylesheet" href="css/hamburgers.css">
+  <!--END MENU BUTTON LINKS-->
+  <script>
+    function init() {
+        window.addEventListener('scroll', function(e){
+            var distanceY = window.pageYOffset || document.documentElement.scrollTop,
+                shrinkOn = 20,
+                header = document.querySelector("header"),
+                logo = document.querySelector(".logo");
+            if (distanceY > shrinkOn) {
+                classie.add(header,"active");
+                classie.add(logo,"smaller")
+            } else {
+                if (classie.has(header,"active")) {
+                    classie.remove(header,"active");
+                    classie.remove(logo,"smaller");
+                }
+            }
+        });
+    }
+    window.onload = init();
+  </script>
+</head>
+
+<body>
+  <div id="my-wrapper" class="touch">
+    <div class="md-modal md-effect-1" id="home-page">
+			<div class="md-content">
+        <h1 class="heading-height-fix">Home Page Image Sources</h1>
+        <table id="hor-minimalist-a" style="margin-top: 0.75em; margin-bottom: 0.5em">
+          <thead class="height-fix">
+            <tr>
+              <th>Image</th>
+              <th>Source</th>
+              <th>Image</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+
+          <tbody style="font-size: 0.65em">
+            <tr>
+              <td>Claw Game Slideshow Picture</td>
+              <td>Taken By Us</td>
+              <td>Drone Slideshow and Activity Picture</td>
+              <td>Taken By Us</td>
+            </tr>
+            <tr>
+              <td>TV Slideshow Picture</td>
+              <td><a href="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2014/01/samsung_curved_4k_tv.jpg?itok=oEOdx5OV">Link</a></td>
+              <td>Pool Slideshow and Activity Picture</td>
+              <td><a href="http://www.aaanything.net/wp-content/uploads/2011/05/amazing_underwater_pool_photo.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Shark In Pool Picture</td>
+              <td><a href="http://sportsmasher.com/wp-content/uploads/2015/04/IMG_0946-0.jpg">Link</a></td>
+              <td>Turtle In Pool Picture</td>
+              <td><a href="http://wallpaperfx.com/view_image/nice-turtle-2880x1800-wallpaper-3404.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Dolphin (Right) In Pool Picture</td>
+              <td><a href="http://stedwardedge.com/wp-content/uploads/2016/04/dolphin11a.jpg">Link</a></td>
+              <td>Dolphin (Left) In Pool Picture</td>
+              <td><a href="http://www.trbimg.com/img-52dffa11/turbine/la-sci-sn-dolphin-power-propulsion-bioinspired-speed-swimming-20140121">Link</a></td>
+            </tr>
+            <tr>
+              <td>Starfish In Pool Picture</td>
+              <td><a href="https://lh4.googleusercontent.com/-8FUcU9tcUos/UubHLv8rTJI/AAAAAAAAACk/SFPNhVCQuGI/w1565-h1567/starfish.png">Link</a></td>
+              <td>Jellyfish In Pool Picture</td>
+              <td><a href="http://finedininglovers.cdn.crosscast-system.com/BlogPost/xl_11832_jellyfish-finedininglovers-tp.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Ice Cream Slideshow and Food Picture</td>
+              <td><a href="http://ocdn.eu/images/pulscms/MmE7MDA_/c84966b3379a5845d5d3b92e6a656920.jpg">Link</a></td>
+              <td>Nintendo Switch Picture</td>
+              <td><a href="https://cdn0.vox-cdn.com/uploads/chorus_asset/file/7312781/NintendoSwitch_hardware2.0.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Xbox One S Picture</td>
+              <td><a href="http://www.gamechannel.hu/pictures/hirblock/billentyuzet-es-egertamogatas-erkezhet-xbox-onera_1.jpg">Link</a></td>
+              <td>zSpace Computer Picture</td>
+              <td><a href="http://tr1.cbsistatic.com/hub/i/2016/01/06/bc9317ee-2fd1-4c16-bfd0-5afd0f4001f6/zspace-stock.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Sphero Robot Picture</td>
+              <td><a href="https://i.ytimg.com/vi/y6dMELeDLto/maxresdefault.jpg">Link</a></td>
+              <td>Pizza Picture</td>
+              <td><a href="http://blog.blogthings.com/wp-content/uploads/2015/01/pepperoni-pizza.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Cheeseburger Picture</td>
+              <td><a href="http://media.meltyfood.fr/article-1630584-ajust_930/quick-s-engage-contre-la-deforestation.jpg">Link</a></td>
+              <td>Chicken Strips Picture</td>
+              <td><a href="https://s-media-cache-ak0.pinimg.com/originals/d0/c1/5e/d0c15e8f2f8e9b93c69723a854a3c24e.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Nachos Picture</td>
+              <td><a href="http://www.chowstatic.com/assets/recipe_photos/28062_basic_cheese_nachos.jpg">Link</a></td>
+              <td>Cookies Picture</td>
+              <td><a href="https://theeclecticconnoisseur.files.wordpress.com/2009/05/blog-chocolate-chip-cookies-010.jpg">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="food-page">
+			<div class="md-content">
+        <h1 class="heading-height-fix">Food Page Image Sources</h1>
+        <table id="hor-minimalist-a" style="margin-top: 0.75em">
+          <thead class="height-fix">
+            <tr>
+              <th>Image</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+
+          <tbody class="height-fix">
+            <tr>
+              <td>Space Bar Banner Picture</td>
+              <td><a href="http://a.abcnews.com/images/International/HT_rollarcoaster_restaurant_3_sk_141201_12x5_1600.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Menu Section Circles Picture</td>
+              <td>Created in Photoshop</td>
+            </tr>
+            <tr>
+              <td>Pizza Picture</td>
+              <td><a href="http://images.techtimes.com/data/images/full/36045/pizza-hut-will-now-serve-gluten-free-pizza.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Salad Picture</td>
+              <td><a href="http://foodnetwork.sndimg.com/content/dam/images/food/fullset/2013/10/7/0/FNK_Greek-Salad_s4x3.jpg.rend.sni12col.landscape.jpeg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Ice Cream Picture</td>
+              <td><a href="http://www.hoststudios.com/assets/images/products/3313_add2.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Cookie Picture</td>
+              <td><a href="http://www.psdchat.com/wp-content/uploads/2013/09/cookie-texture.png">Link</a></td>
+            </tr>
+            <tr>
+              <td>More Photos #1 Picture</td>
+              <td><a href="http://www.shortlistabudhabi.com/sites/default/files/images/2015/07/02/RogoRollercoasterCrop22.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>More Photos #2 Picture</td>
+              <td><a href="http://static.wixstatic.com/media/d30b55_34317720e5e74cfe837c80ecbc5d9f2b.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>More Photos #3 Picture</td>
+              <td><a href="http://www.nsmbl.nl/wp-content/uploads/2016/10/Alton-Towers-Roller-coaster-restaurant-1.jpg">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="pricing-page">
+			<div class="md-content">
+        <h1>Pricing Page Image Sources</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Pricing Banner Image (Quarters)</td>
+              <td>Taken By Us</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="about-page">
+			<div class="md-content">
+        <h1>About Us Page Image Sources</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>About Us Banner Image (Robots)</td>
+              <td><a href="http://www.trbimg.com/img-5582bd1d/turbine/chi-inc-robots-doing-more-office-work-bsi-hub-20150617">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="contact-page">
+			<div class="md-content">
+        <h1>Contact Us Page Image Sources</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Contact Us Banner Image (Keyboard)</td>
+              <td><a href="http://www.lmaos.co.uk/wp-content/uploads/2016/05/contact-us-2-3.jpg">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="credits-page">
+			<div class="md-content">
+        <h1>Credits Page Image Sources</h1>
+        <table id="hor-minimalist-a">
+          <thead>
+            <tr>
+              <th>Image</th>
+              <th>Source</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>Credits Banner Image (Keyboard)</td>
+              <td>Taken By Us</td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="outdoor-pages">
+			<div class="md-content">
+        <h1 class="heading-height-fix" style="margin-top: 0.2em">Outdoor Activities Pages Image Sources</h1>
+        <table id="hor-minimalist-a" style="margin-top: 0.75em; margin-bottom: 0.5em">
+          <thead class="height-fix">
+            <tr>
+              <th colspan="4">Holographic Pool</th>
+            </tr>
+          </thead>
+
+          <tbody class="height-fix">
+            <tr>
+              <td>Image</td>
+              <td>Source</td>
+              <td>Image</td>
+              <td>Source</td>
+            </tr>
+            <tr>
+              <td>Pool Banner Image</td>
+              <td><a href="https://d2ogu0s7epxdzj.cloudfront.net/article/wp-content/uploads/2016/07/08113134/Backyard-Landscaping-Ideas-Swimming-Pool-Design-Homesthetics-3.jpg">Link</a></td>
+              <td>Pool Pricing Image 1</td>
+              <td><a href="http://www.aaanything.net/wp-content/uploads/2011/05/amazing_underwater_pool_photo.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Shark In Pool Picture</td>
+              <td><a href="http://sportsmasher.com/wp-content/uploads/2015/04/IMG_0946-0.jpg">Link</a></td>
+              <td>Turtle In Pool Picture</td>
+              <td><a href="http://wallpaperfx.com/view_image/nice-turtle-2880x1800-wallpaper-3404.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Dolphin (Right) In Pool Picture</td>
+              <td><a href="http://stedwardedge.com/wp-content/uploads/2016/04/dolphin11a.jpg">Link</a></td>
+              <td>Dolphin (Left) In Pool Picture</td>
+              <td><a href="http://www.trbimg.com/img-52dffa11/turbine/la-sci-sn-dolphin-power-propulsion-bioinspired-speed-swimming-20140121">Link</a></td>
+            </tr>
+            <tr>
+              <td>Starfish In Pool Picture</td>
+              <td><a href="https://lh4.googleusercontent.com/-8FUcU9tcUos/UubHLv8rTJI/AAAAAAAAACk/SFPNhVCQuGI/w1565-h1567/starfish.png">Link</a></td>
+              <td>Jellyfish In Pool Picture</td>
+              <td><a href="http://finedininglovers.cdn.crosscast-system.com/BlogPost/xl_11832_jellyfish-finedininglovers-tp.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Holographic Jellyfish Pricing Image</td>
+              <td><a href="http://bbsimg.res.flymeos.com/forum/201605/11/191133znb3sj0si1ik3ghj.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <th colspan="4">Drone Racing</th>
+            </tr>
+            <tr>
+              <td>Drone Banner Image</td>
+              <td>Taken By Us</td>
+              <td>Drone Pricing Image 1</td>
+              <td>Taken By Us</td>
+            </tr>
+            <tr>
+              <td>Drone Course Pricing Image</td>
+              <td><a href="https://i.ytimg.com/vi/TjO2Bz-eQ5U/maxresdefault.jpg">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button style="font-size: 1em" class="md-close button">Close</button>
+			</div>
+		</div>
+    <div class="md-modal md-effect-1" id="indoor-pages">
+			<div class="md-content">
+        <h1 class="heading-height-fix" style="margin-top: 0.05em">Indoor Activities Pages Image Sources</h1>
+        <table id="hor-minimalist-a" style="margin-top: 0.25em; margin-bottom: 0.5em">
+          <thead class="height-fix" style="font-size: 0.65em">
+            <tr>
+              <th colspan="2">Virtual Sports</th>
+              <th colspan="2">Laser Tag</th>
+            </tr>
+          </thead>
+
+          <tbody class="height-fix" style="font-size: 0.65em">
+            <tr>
+              <td>Image</td>
+              <td>Source</td>
+              <td>Image</td>
+              <td>Source</td>
+            </tr>
+            <tr>
+              <td>VR Sports Banner Image</td>
+              <td>Taken By Us</td>
+              <td>Laser Tag Banner Image</td>
+              <td><a href="http://newmarketlasertag.com/wp-content/uploads/2013/10/LED-Vesting-Racks-Green.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>VR Sports Pricing Image 1</td>
+              <td><a href="https://cdn.psfk.com/wp-content/uploads/2016/03/livelike1.png">Link</a></td>
+              <td>Laser Tag Pricing Image 1</td>
+              <td><a href="http://kjfun.com/wp-content/uploads/2016/08/lazer-tag-st-louis.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>VR Sports Pricing Image 2</td>
+              <td><a href="http://1u88jj3r4db2x4txp44yqfj1.wpengine.netdna-cdn.com/wp-content/uploads/2015/10/VR-Sports-Challenge_hockey_Sanzaru-Games.jpg">Link</a></td>
+              <td>Laser Tag Pricing Image 2</td>
+              <td><a href="http://kjfun.com/wp-content/uploads/2016/08/lazer-tag-st-charles.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <th colspan="2">Advanced Arcade</th>
+              <th colspan="2">Theater &amp; Games</th>
+            <tr>
+              <td>Advanced Arcade Banner Image</td>
+              <td>Taken By Us</td>
+              <td>Theater &amp; Games Banner Image</td>
+              <td><a href="https://www.imore.com/sites/imore.com/files/styles/xlarge/public/field/image/2014/01/samsung_curved_4k_tv.jpg?itok=oEOdx5OV">Link</a></td>
+            </tr>
+            <tr>
+              <td>Advanced Arcade Pricing Image 1</td>
+              <td><a href="https://i.ytimg.com/vi/lJIaP9Z_IZA/maxresdefault.jpg">Link</a></td>
+              <td>Theater &amp; Games Pricing Image 1 (Wii)</td>
+              <td>Taken By Us</td>
+            </tr>
+            <tr>
+              <td>Advanced Arcade Pricing Image 2</td>
+              <td><a href="https://cdn0.vox-cdn.com/thumbor/gO9bUKhTlRxocJFyTNcZRcUH5QY=/1020x0/cdn0.vox-cdn.com/uploads/chorus_asset/file/6069083/DSCF2731.0.jpg">Link</a></td>
+              <td>Theater &amp; Games Pricing Image 2</td>
+              <td><a href="https://s-media-cache-ak0.pinimg.com/originals/6b/25/31/6b25311a5b079895ad21ea507cc2e36e.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <th colspan="4">Robotics Room</th>
+            </tr>
+            <tr>
+              <td>Robotics Room Banner Image</td>
+              <td><a href="https://i.ytimg.com/vi/y6dMELeDLto/maxresdefault.jpg">Link</a></td>
+              <td>Robotics Room Pricing Image 1</td>
+              <td><a href="https://c.o0bg.com/rf/image_1920w/Boston/2011-2020/2015/03/23/BostonGlobe.com/Lifestyle/Images/robots_04.jpg">Link</a></td>
+            </tr>
+            <tr>
+              <td>Robotics Room Pricing Image 2</td>
+              <td><a href="https://cdn.arstechnica.net/wp-content/uploads/2013/08/ev3_listing.jpg">Link</a></td>
+            </tr>
+          </tbody>
+        </table>
+        <button class="md-close button" style="font-size: 0.75em">Close</button>
+			</div>
+		</div>
+
+		<nav id="cd-vertical-nav">
+  		<ul>
+        <li>
+  				<a href="#page-top" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Page Top</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#source" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Source Code</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#background" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Backgrounds</span>
+  				</a>
+  			</li>
+  			<li>
+  				<a href="#images" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Images</span>
+  				</a>
+  			</li>
+        <li>
+  				<a href="#icons" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Icons</span>
+  				</a>
+  			</li>
+        <li>
+  				<a href="#contact" class="page-scroll">
+  					<span class="cd-dot"></span>
+  					<span class="cd-label">Contact</span>
+  				</a>
+  			</li>
+  		</ul>
+  	</nav>
+
+    <a class="cd-nav-trigger cd-img-replace">Open navigation<span></span></a>
+
+    <a href="index.html"><img src="images/logo.png" alt="logo" class="logo"></a>
+
+      <header id="header" class="header">
+        <a href="#page-top" class="page-scroll"><h1>F@mily Cyb3r C1ty</h1></a>
+        <button id="hamburger" class="hamburger hamburger--emphatic" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+        <nav>
+          <ul>
+            <li><a class="page-scroll" href="#contact">Contact</a></li>
+            <li><a class="page-scroll" href="#icons">Icons</a></li>
+            <li><a class="page-scroll" href="#images">Images</a></li>
+            <li><a class="page-scroll" href="#background">Backgrounds</a></li>
+            <li><a class="page-scroll" href="#source">Source Code</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!--SLIDESHOW-->
+      <div class="banner" id="page-top">
+        <div><img src="images/keyboard.jpg"></div>
+        <div class="banner-overlay">
+          <h1>Credits</h1>
+        </div>
+        <a href="#source" class="page-scroll down-arrow flaticon-arrows"></a>
+      </div>
+      <!--END SLIDESHOW-->
+
+    <main>
+      <section class="green-bg" style="padding-bottom:2em" id="source">
+        <h1 class="heading">Open Source Code Used</h1>
+        <hr class="blue">
+        <p class="width-90">These are links to all open source code we modified and used to build our website along with each creator's name. Clicking on the item under the link column will bring you to the source page.</p>
+        <div class="hours-container">
+          <table id="hor-minimalist-a">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Creator</th>
+                <th>Link</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Fixed Mobile Nav Menu</td>
+                <td>Codyhouse.co</td>
+                <td><a href="https://codyhouse.co/gem/vertical-fixed-navigation/">Mobile Nav Link</a></td>
+              </tr>
+              <tr>
+                <td>JQuery Cycle Slideshow 2</td>
+                <td>Malsup</td>
+                <td><a href="http://jquery.malsup.com/cycle2/">Cylce2 Link</a></td>
+              </tr>
+              <tr>
+                <td>JQuery MMenu</td>
+                <td>Fred Heusschen</td>
+                <td><a href="https://github.com/FrDH/jQuery.mmenu">Source Link from Github</a></td>
+              </tr>
+              <tr>
+                <td>Modal Window Effects</td>
+                <td>Codrops - Tympanus</td>
+                <td><a href="https://tympanus.net/codrops/2013/06/25/nifty-modal-window-effects/">Pop-Up Window Effect Link</a></td>
+              </tr>
+              <tr>
+                <td>Booked Scheduler</td>
+                <td>Twinkle Toes Software</td>
+                <td><a href="http://www.bookedscheduler.com/">Reservation System Link</a></td>
+              </tr>
+              <tr>
+                <td>Responsive Multilevel Menu</td>
+                <td>Codrops - Tympanus</td>
+                <td><a href="https://tympanus.net/codrops/2013/04/19/responsive-multi-level-menu/">Reservation Page Menu Link</a></td>
+              </tr>
+              <tr>
+                <td>Scrolling Effects</td>
+                <td>Call Me Nick</td>
+                <td><a href="http://callmenick.com/post/animated-resizing-header-on-scroll">Resizing Content On Scroll Link</a></td>
+              </tr>
+              <tr>
+                <td>Single Page Smooth Scroll</td>
+                <td>David Miller - Start Bootstrap</td>
+                <td><a href="https://startbootstrap.com/template-overviews/scrolling-nav/">Smooth Scrolling Source Link</a></td>
+              </tr>
+              <tr>
+                <td>Table Styles</td>
+                <td>Rick Christie</td>
+                <td><a href="https://www.smashingmagazine.com/2008/08/top-10-css-table-designs/">Custom Table Styles Link</a></td>
+              </tr>
+              <tr>
+                <td>Text Input Styles</td>
+                <td>Codrops - Tympanus</td>
+                <td><a href="https://tympanus.net/codrops/2015/01/08/inspiration-text-input-effects/">Custom Text Input Styles</a></td>
+              </tr>
+		  <tr>
+			<td colspan="3"><a href="https://docs.google.com/document/d/1HwqUR3pTjDE4cmgtg70p9K_dzXeuJs0E3yAX14HH4cc/edit?usp=sharing">Click here to view official citations of all open source code, pictures, and other resources used in our website.</a></td>
+		  </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="dark-bg" style="padding-bottom: 2.3em" id="background">
+        <h1 class="heading">Background Textures</h1>
+        <hr class="green">
+        <p class="width-90">These are all the texture overlays we used for sections throughout our website, and they all came from Transparent Textures' website.</p>
+        <div class="transparent-box-2 light-bg width-97">
+          <div class="transparent-box-inner">
+            <h2 class="green">Transparent Textures</h2>
+            <p>All textures used on top of background colors were pulled from <a href="https://transparenttextures.com">transparenttextures.com.</a> They were used in the footer, content sections of each page, and in the slideout menu.</p>
+          </div>
+          <div class="transparent-box-inner">
+            <h2 class="green">Links to Each Texture Used</h2>
+            <ul class="texture-list">
+              <li style="display: inline-block"><a href="https://www.transparenttextures.com/patterns/diagmonds.png">Section Texture</a></li> <div class="pipe">|</div>
+              <li style="display: inline-block"><a href="https://www.transparenttextures.com/patterns/black-linen-2.png">Menu Texture</a></li> <div class="pipe">|</div>
+              <li style="display: inline-block"><a href="https://www.transparenttextures.com/patterns/bright-squares.png">Footer Texture</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="blue-bg" id="images" style="padding-bottom: 2.1em; padding-top: 0.1em">
+        <h1 class="heading">Image Sources</h1>
+        <hr>
+        <p class="width-90">Click on the boxes below to view all pictures used on each page along with their respective sources.</p>
+        <div class="feature-container feature-background-1">
+          <div class="feature-row2">
+            <a class="md-trigger" data-modal="home-page" href="#home-page">
+              <div class="feature-box2">
+                <i class="icon3 flaticon-home-1 larger"></i>
+                <h2 class="white">Home Page Images</h2>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="food-page" href="#food-page">
+              <div class="feature-box2">
+                <i class="icon2 flaticon-cutlery larger"></i>
+                <h2 class="white">Food Page Images</h2>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="pricing-page" href="#pricing-page">
+              <div class="feature-box2">
+                <i class="icon-font icon-banknote larger"></i>
+                <h2 class="white">Pricing Page Images</h2>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="about-page" href="#about-page">
+              <div class="feature-box2">
+                <i class="icon2 flaticon-information larger"></i>
+                <h2 class="white">About Us Page Images</h2>
+              </div>
+            </a>
+          </div>
+          <div class="feature-row2">
+            <a class="md-trigger" data-modal="contact-page" href="#contact-page">
+              <div class="feature-box2">
+                <i class="icon2 flaticon-phone-call larger"></i>
+                <h2 class="white">Contact Us Page Images</h2>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="credits-page" href="#credits-page">
+              <div class="feature-box2">
+                <i class="icon3 flaticon-users-1 larger"></i>
+                <h2 class="white">Credits Page Images</h2>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="outdoor-pages" href="#outdoor-pages">
+              <div class="feature-box2">
+                <i class="icon2 flaticon-image larger"></i>
+                <h2 class="white">Outdoor Activities Pages Images</h2>
+              </div>
+            </a>
+            <a class="md-trigger" data-modal="indoor-pages" href="#indoor-pages">
+              <div class="feature-box2">
+                <i class="icon2 flaticon-gamepad larger"></i>
+                <h2 class="white">Indoor Activities Pages Images</h2>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <section class="white-bg" id="icons">
+        <h1 class="heading">Fonts &amp; Icons</h1>
+        <hr class="green">
+        <p class="width-90">All font and icon packs were pulled from <a href="http://flaticon.com">Flaticon.com</a> &mdash; a website which contains hundreds of thousands of free vector icons for any of their members to use.</p>
+        <div class="upcoming">
+          <div class="event less-dark-bg">
+            <h3 class="green">Rating Stars</h3>
+            <p class="width-90">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="favorite-7" href="http://www.freepik.com">Freepik</a></p>
+          </div>
+          <div class="event less-dark-bg">
+            <h3 class="green">Social Icons</h3>
+            <p class="width-90">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="twitter-logo-button" href="http://www.flaticon.com/authors/bogdan-rosu">Bogdan Rosu</a></p>
+          </div>
+          <div class="event less-dark-bg">
+            <h3 class="green">Miscellaneous Elements Pack</h3>
+            <p class="width-90">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="shield" href="http://www.flaticon.com/authors/">Freepik</a></p>
+          </div>
+          <div class="event less-dark-bg">
+            <h3 class="green">Essential Elements Pack</h3>
+            <p class="width-90">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="locked-6" href="http://www.flaticon.com/authors/madebyoliver">Madebyoliver</a></p>
+          </div>
+          <div class="event less-dark-bg">
+            <h3 class="green">Page Icons</h3>
+            <p class="width-90">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="sports" href="http://www.flaticon.com/authors/elias-bikbulatov">Elias Bikbulatov</a></p>
+          </div>
+          <div class="event less-dark-bg">
+            <h3 class="green">Down Arrow</h3>
+            <p class="width-90">Font generated by <a href="http://www.flaticon.com">flaticon.com</a>. Under <a href="http://creativecommons.org/licenses/by/3.0/">CC</a>: <a data-file="favorite-7" href="http://www.freepik.com">Freepik</a></p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="navy-blue-bg top-fix" id="contact">
+      <h1 class="heading">F@mily Cyb3r C1ty</h1>
+      <hr>
+      <section class="footer-section activities">
+        <h3>Activities</h3>
+        <ul class="activities-list">
+          <li><a href="activities/sports.html">Virtual Sports</a></li>
+          <li><a href="activities/laser.html">Laser Tag</a></li>
+          <li><a href="activities/arcade.html">Advanced Arcade</a></li>
+          <li><a href="activities/theater.html">Theater &amp; Games</a></li>
+          <li><a href="activities/robotics.html">Robotics Room</a></li>
+          <li><a href="activities/pool.html">Holographic Pool</a></li>
+          <li><a href="activities/drone.html">Drone Racing</a></li>
+        </ul>
+      </section>
+
+      <section class="footer-section contact">
+        <h3>Contact</h3>
+          <div class="contact-list">
+            <a class="icon-font icon-mail"></a>
+            <a class="contact-left less-space" href="mailto:familycybercity@gmail.com">familycybercity@gmail.com</a>
+            <a class="contact-left more-space" href="mailto:help.fcc@gmail.com">help.fcc@gmail.com</a>
+            <a class="icon-font icon-phone"></a>
+            <a class="contact-left less-space" href="tel:1-800-366-3669">1-800-366-3669</a>
+            <a class="contact-left more-space" href="tel:1-800-366-3670">1-800-366-3670</a>
+            <a class="icon3 flaticon-map-location"></a>
+            <a class="contact-left less-space">Family Cyber City</a>
+            <a class="contact-left less-space">1262-1500 Goethals Rd N</a>
+            <a class="contact-left">Staten Island, NY 10303</a>
+          </div>
+      </section>
+
+      <section class="footer-section hours">
+        <h3>Hours</h3>
+        <ul class="hours-list">
+          <div class="computer">
+            <li>Monday: 10am - 8pm</li>
+            <li>Tuesday: 10am - 8pm</li>
+            <li>Wednesday: 10am - 8pm</li>
+            <li>Thursday: 10am - 8pm</li>
+            <li>Friday: 10am - 12am</li>
+            <li>Saturday: 10am - 12am</li>
+            <li>Sunday: 10am - 10pm</li>
+          </div>
+          <div class="mobile2">
+            <li>Mon: 10A - 8P</li>
+            <li>Tue: 10A - 8P</li>
+            <li>Wed: 10A - 8P</li>
+            <li>Thur: 10A - 8P</li>
+            <li>Fri: 10A - 12A</li>
+            <li>Sat: 10A - 12A</li>
+            <li>Sun: 10A - 10P</li>
+          </div>
+        </ul>
+      </section>
+
+      <section class="social-section">
+        <h3>Connect with Us</h3>
+        <div class="social-icons">
+          <a id="facebook" href="https://www.facebook.com/familycybercity/" class="social flaticon-facebook-logo-button"></a>
+          <a id="plus" href="https://plus.google.com/105029289738376648082?hl=en" class="social flaticon-google-plus-logo-button"></a>
+          <a id="inst" href="https://www.instagram.com/familycybercity/" class="social flaticon-instagram-logo"></a>
+          <a id="link" href="https://www.linkedin.com/in/dylan-burr-248843133?trk=prof-samename-name" class="social flaticon-linkedin-logo-button"></a>
+          <a id="twitter" href="https://twitter.com/familycybercity" class="social flaticon-twitter-logo-button"></a>
+        </div>
+      </section>
+    </footer>
+  </div> <!--/End my-page div -->
+
+  <nav id="my-menu">
+    <ul>
+      <li><a href="index.html"><i class="icon3 flaticon-home-1"></i>Home</a></li>
+      <li><span><i class="icon3 flaticon-list"></i>Activities</span>
+        <ul>
+          <li><span><i class="icon2 flaticon-gamepad"></i>Indoor</span>
+            <ul>
+              <li><a href="activities/sports.html"><i class="icon4 flaticon-sports"></i>Virtual Sports</a></li>
+              <li><a href="activities/laser.html"><i class="icon4 flaticon-technology"></i>Laser Tag</a></li>
+              <li><a href="activities/arcade.html"><i class="icon4 flaticon-technology-1"></i>Advanced Arcade</a></li>
+              <li><a href="activities/theater.html"><i class="icon4 flaticon-video"></i>Theater &amp; Games</a></li>
+              <li><a href="activities/robotics.html"><i class="icon4 flaticon-technology-2"></i>Robotics Room</a></li>
+            </ul>
+          </li>
+          <li><span><i class="icon3 flaticon-picture"></i>Outdoor</span>
+            <ul>
+              <li><a href="activities/pool.html"><i class="icon4 flaticon-sports-1"></i>Holographic Pool</a></li>
+              <li><a href="activities/drone.html"><i class="icon4 flaticon-camera"></i>Drone Racing</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      <li><a href="food.html"><i class="icon2 flaticon-cutlery"></i>Food</a></li>
+      <li><a href="pricing.html"><i class="icon-font icon-banknote"></i>Pricing</a></li>
+      <li><a href="about.html"><i class="icon2 flaticon-information"></i>About Us</a></li>
+      <li><a href="contact.html"><i class="icon2 flaticon-phone-call"></i>Contact Us</a></li>
+	    <li><a href="/booked"><i class="icon-font icon-calendar"></i>Reservations</a></li>
+      <li><a href="credits.html"><i class="icon3 flaticon-users-1"></i>Credits</a></li>
+    </ul>
+  </nav>
+
+  <div class="md-overlay"></div>
+  <script>
+   $(document).ready(function() {
+      $("#my-menu").mmenu();
+   });
+
+   var $menu = $("#my-menu").mmenu({
+     "extensions": ["pagedim-black"],
+   });
+   var $icon = $("#hamburger");
+   var API = $menu.data( "mmenu" );
+
+   $icon.on( "click", function( event ) {
+     event.preventDefault();
+     API.open();
+   });
+
+   API.bind( "opened", function() {
+     setTimeout(function() {
+       $icon.addClass( "is-active" );
+     }, 100);
+   });
+   API.bind( "closed", function() {
+     setTimeout(function() {
+       $icon.removeClass( "is-active" );
+     }, 100);
+   });
+   $('.nav-link').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link2').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link3').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link4').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+   $('.nav-link5').click( function() {
+     $("#cn-wrapper").toggleClass("opened-nav");
+   });
+  </script>
+
+  <script src="js/modalEffects.js"></script>
+  <script src="js/classie.js"></script>
+  <script src="js/demo2.js"></script>
+  <script>
+    // this is important for IEs
+    var polyfilter_scriptpath = '/js/';
+  </script>
+  <script src="js/cssParser.js"></script>
+  <script src="js/css-filters-polyfill.js"></script>
+</body>
+</html>
